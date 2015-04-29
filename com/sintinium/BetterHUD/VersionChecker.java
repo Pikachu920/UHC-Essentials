@@ -13,8 +13,8 @@ public class VersionChecker {
 	public ArrayList getCurrentVersion() {
 		try {
 			URL oracle;
-			oracle = new URL("http://pastebin.com/raw.php?i=dQYWGxw5");
-			BufferedReader in = new BufferedReader(new InputStreamReader(oracle.openStream()));
+			versionChecker = new URL("http://pastebin.com/raw.php?i=dQYWGxw5");
+			BufferedReader in = new BufferedReader(new InputStreamReader(versionChecker.openStream()));
 			data.clear();
 
 			String inputLine;
